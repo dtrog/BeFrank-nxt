@@ -72,7 +72,7 @@ public class DesktopApplication extends Application {
     private static volatile WebEngine webEngine;
     private JSObject nrs;
     private volatile long updateTime;
-    private JavaScriptBridge javaScriptBridge;
+    private nxtdesktop.JavaScriptBridge javaScriptBridge;
 
     public static void launch() {
         if (!isLaunched) {
@@ -158,18 +158,18 @@ public class DesktopApplication extends Application {
                     Nxt.getTransactionProcessor().addListener(transaction ->
                             updateClientState(TransactionProcessor.Event.REMOVED_UNCONFIRMED_TRANSACTIONS, transaction), TransactionProcessor.Event.REMOVED_UNCONFIRMED_TRANSACTIONS);
 
-                    if (ENABLE_JAVASCRIPT_DEBUGGER) {
-                        try {
-                            // Add the javafx_webview_debugger lib to the classpath
-                            // For more details, check https://github.com/mohamnag/javafx_webview_debugger
-                            Class<?> aClass = Class.forName("com.mohamnag.fxwebview_debugger.DevToolsDebuggerServer");
-                            @SuppressWarnings("deprecation") Debugger debugger = webEngine.impl_getDebugger();
-                            Method startDebugServer = aClass.getMethod("startDebugServer", Debugger.class, int.class);
-                            startDebugServer.invoke(null, debugger, 51742);
-                        } catch (ClassNotFoundException | NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
-                            Logger.logInfoMessage("Cannot start JavaFx debugger", e);
-                        }
-                    }
+//                    if (ENABLE_JAVASCRIPT_DEBUGGER) {
+//                        try {
+//                            // Add the javafx_webview_debugger lib to the classpath
+//                            // For more details, check https://github.com/mohamnag/javafx_webview_debugger
+//                            Class<?> aClass = Class.forName("com.mohamnag.fxwebview_debugger.DevToolsDebuggerServer");
+//                            @SuppressWarnings("deprecation") Debugger debugger = webEngine.impl_getDebugger();
+//                            Method startDebugServer = aClass.getMethod("startDebugServer", Debugger.class, int.class);
+//                            startDebugServer.invoke(null, debugger, 51742);
+//                        } catch (ClassNotFoundException | NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+//                            Logger.logInfoMessage("Cannot start JavaFx debugger", e);
+//                        }
+//                    }
                });
 
         // Invoked by the webEngine popup handler

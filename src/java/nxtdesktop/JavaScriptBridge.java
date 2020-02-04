@@ -38,10 +38,10 @@ import java.nio.file.Paths;
 @SuppressWarnings("WeakerAccess")
 public class JavaScriptBridge {
 
-    DesktopApplication application;
+    nxtdesktop.DesktopApplication application;
     private Clipboard clipboard;
 
-    public JavaScriptBridge(DesktopApplication application) {
+    public JavaScriptBridge(nxtdesktop.DesktopApplication application) {
         this.application = application;
     }
 

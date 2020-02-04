@@ -26,8 +26,8 @@ RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true 
 RUN apt-get install -y oracle-java8-installer
 
 # run and compile nxt
-RUN mkdir /nxt
-ADD . /nxt
+RUN mkdir /befrank-nxt
+ADD . /befrank-nxt
 # repo has
 ADD contrib/docker_start.sh /docker_start.sh
 # set nxt to listen on all interfaces
@@ -35,7 +35,7 @@ RUN echo 'nxt.allowedBotHosts=*' >> /nxt/conf/nxt.properties
 RUN echo 'nxt.apiServerHost=0.0.0.0' >> /nxt/conf/nxt.properties
 RUN chmod +x /docker_start.sh
 
-RUN cd /nxt; ./compile.sh
+RUN cd /befrank-nxt; ./compile.sh
 # both Nxt ports get exposed
-EXPOSE 7874 7876
+EXPOSE 18320 18322
 CMD ["/docker_start.sh"]
