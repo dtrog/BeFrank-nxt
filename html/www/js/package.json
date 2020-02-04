@@ -1,7 +1,7 @@
 {
-  "name": "nxt-blockchain",
+  "name": "nfr-blockchain",
   "version": "1.11.8",
-  "description": "Client API library for the NXT Blockchain",
+  "description": "Client API library for the BFR Blockchain",
   "main": "nrs.node.bridge.js",
   "directories": {
     "test": "test"
@@ -11,16 +11,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/Jelurida/nxt.git"
+    "url": "git+https://github.com/befrank-project/befrank-nxt.git"
   },
   "keywords": [
     "blockchain",
     "client",
     "api"
   ],
-  "author": "Jelurida",
+  "author": "BeFrank",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/Jelurida/nxt#readme",
+  "homepage": "https://www.getfrank.be",
   "dependencies": {
     "async": "^2.1.4",
     "crypto-js": "^3.1.9-1",

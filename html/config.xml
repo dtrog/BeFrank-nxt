@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="org.nxt.mobile.wallet" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>NXT Mobile Wallet</name>
+    <name>BFR Mobile Wallet</name>
     <description>
-        Reference implementation mobile wallet for NXT.
+        Reference implementation mobile wallet for BeFrank.
     </description>
-    <author email="info@jelurida.com" href="https://jelurida.com/">
-        Jelurida
+    <author email="info@getfrank.be" href="https://getfrank.be/">
+        BeFrank
     </author>
     <version>111.5.0</version>
     <content src="index.html" />

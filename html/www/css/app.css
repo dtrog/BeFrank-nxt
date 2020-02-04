@@ -36,13 +36,14 @@
 ----------------------------
 */
 html,
+
 body {
   overflow-x:hidden;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Fira Sans",Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   min-height: 100%;
   background: #f9f9f9;
-  color: black !important;
+  color: #171717 !important;
 }
 /* preload images or they will flicker */
 body::after{
@@ -282,10 +283,10 @@ img {
 
 /* Text colors */
 .text-red {
-  color: #f56954 !important;
+  color: #f04d33 !important;
 }
 .text-yellow {
-  color: #f39c12 !important;
+  color: #fee000 !important;
 }
 .text-aqua {
   color: #00c0ef !important;

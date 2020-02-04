@@ -7,11 +7,11 @@ Your passphrase is never sent to the remote node when submitting
 a transaction.
 
 To use the samples:
-- No need to install the NXT software or download the blockchain
+- No need to install the BFR software or download the blockchain
 - Install Node JS and NPM from https://nodejs.org/en/
 - From the command prompt type:
-- npm install nxt-blockchain
-cd node_modules/nxt-blockchain/sample
+- npm install bfr-blockchain
+cd node_modules/bfr-blockchain/sample
 
 - Configure the remote node and NXT account by editing the config.json file
 - Run the samples using Node JS, for example:
