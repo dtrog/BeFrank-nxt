@@ -16,6 +16,7 @@
 
 package nxt;
 
+import nxt.Constants;
 import nxt.AccountLedger.LedgerEntry;
 import nxt.AccountLedger.LedgerEvent;
 import nxt.AccountLedger.LedgerHolding;
@@ -1224,7 +1225,7 @@ public final class Account {
     }
 
     public long getEffectiveBalanceNXT(int height) {
-        if (height <= 1440) {
+        if (height <= Constants.PHASING_DELAY) {
             Account genesisAccount = getAccount(id, 0);
             return genesisAccount == null ? 0 : genesisAccount.getBalanceNQT() / Constants.ONE_NXT;
         }

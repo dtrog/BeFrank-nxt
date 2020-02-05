@@ -16,6 +16,7 @@
 
 package nxt;
 
+import nxt.Constants;
 import nxt.crypto.Crypto;
 import nxt.db.DbIterator;
 import nxt.util.Convert;
@@ -605,7 +606,7 @@ public final class FundingMonitor {
         FundingMonitor monitor = monitoredAccount.monitor;
         if (targetAccount.getBalanceNQT() < monitoredAccount.threshold) {
             Transaction.Builder builder = Nxt.newTransactionBuilder(monitor.publicKey,
-                    monitoredAccount.amount, 0, (short)1440, Attachment.ORDINARY_PAYMENT);
+                    monitoredAccount.amount, 0, (short)Constants.PHASING_DELAY, Attachment.ORDINARY_PAYMENT);
             builder.recipientId(monitoredAccount.accountId)
                    .timestamp(Nxt.getBlockchain().getLastBlockTimestamp());
             Transaction transaction = builder.build(monitor.secretPhrase);
@@ -642,7 +643,7 @@ public final class FundingMonitor {
         } else if (targetAsset == null || targetAsset.getQuantityQNT() < monitoredAccount.threshold) {
             Attachment attachment = new Attachment.ColoredCoinsAssetTransfer(monitor.holdingId, monitoredAccount.amount);
             Transaction.Builder builder = Nxt.newTransactionBuilder(monitor.publicKey,
-                    0, 0, (short)1440, attachment);
+                    0, 0, (short)Constants.PHASING_DELAY, attachment);
             builder.recipientId(monitoredAccount.accountId)
                    .timestamp(Nxt.getBlockchain().getLastBlockTimestamp());
             Transaction transaction = builder.build(monitor.secretPhrase);
@@ -679,7 +680,7 @@ public final class FundingMonitor {
         } else if (targetCurrency == null || targetCurrency.getUnits() < monitoredAccount.threshold) {
             Attachment attachment = new Attachment.MonetarySystemCurrencyTransfer(monitor.holdingId, monitoredAccount.amount);
             Transaction.Builder builder = Nxt.newTransactionBuilder(monitor.publicKey,
-                    0, 0, (short)1440, attachment);
+                    0, 0, (short)Constants.PHASING_DELAY, attachment);
             builder.recipientId(monitoredAccount.accountId)
                    .timestamp(Nxt.getBlockchain().getLastBlockTimestamp());
             Transaction transaction = builder.build(monitor.secretPhrase);

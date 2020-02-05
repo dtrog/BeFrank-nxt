@@ -8,7 +8,7 @@ fi
 APPLICATION="BeFrank"
 PACKAGE=${APPLICATION}-client-${VERSION}
 echo PACKAGE="${PACKAGE}"
-CHANGELOG=nxt-clone-client-${VERSION}.changelog.txt
+CHANGELOG=bfr-client-${VERSION}.changelog.txt
 OBFUSCATE=$2
 
 FILES="changelogs conf html lib resource contrib"
@@ -95,7 +95,7 @@ unix2dos changelog-full.txt
 echo creating change log ${CHANGELOG}
 echo "Release $1" > ${CHANGELOG}
 echo >> ${CHANGELOG}
-echo "https://www.jelurida.com/" >> ${CHANGELOG}
+echo "https://www.getfrank.be/" >> ${CHANGELOG}
 echo >> ${CHANGELOG}
 echo "sha256 checksums:" >> ${CHANGELOG}
 echo >> ${CHANGELOG}
@@ -122,11 +122,11 @@ echo >> ${CHANGELOG}
 cat changelogs/${CHANGELOG} >> ${CHANGELOG}
 echo >> ${CHANGELOG}
 
-gpg --detach-sign --armour --sign-with 0xC654D7FCFF18FD55 ${PACKAGE}.zip
+#gpg --detach-sign --armour --sign-with 0xC654D7FCFF18FD55 ${PACKAGE}.zip
 #gpg --detach-sign --armour --sign-with 0xC654D7FCFF18FD55 ${PACKAGE}.sh
 #gpg --detach-sign --armour --sign-with 0xC654D7FCFF18FD55 ${PACKAGE}.exe
 
-gpg --clearsign --sign-with 0xC654D7FCFF18FD55 ${CHANGELOG}
+#gpg --clearsign --sign-with 0xC654D7FCFF18FD55 ${CHANGELOG}
 rm -f ${CHANGELOG}
 gpgv ${PACKAGE}.zip.asc ${PACKAGE}.zip
 #gpgv ${PACKAGE}.sh.asc ${PACKAGE}.sh

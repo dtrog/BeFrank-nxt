@@ -17,6 +17,7 @@
 package nxt.peer;
 
 import nxt.Nxt;
+import nxt.Constants;
 import nxt.util.Convert;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -39,10 +40,10 @@ final class GetNextBlockIds extends PeerServlet.PeerRequestHandler {
         JSONArray nextBlockIds = new JSONArray();
         long blockId = Convert.parseUnsignedLong((String) request.get("blockId"));
         int limit = (int)Convert.parseLong(request.get("limit"));
-        if (limit > 1440) {
+        if (limit > Constants.PHASING_DELAY) {
             return GetNextBlocks.TOO_MANY_BLOCKS_REQUESTED;
         }
-        List<Long> ids = Nxt.getBlockchain().getBlockIdsAfter(blockId, limit > 0 ? limit : 1440);
+        List<Long> ids = Nxt.getBlockchain().getBlockIdsAfter(blockId, limit > 0 ? limit : Constants.PHASING_DELAY);
         ids.forEach(id -> nextBlockIds.add(Long.toUnsignedString(id)));
         response.put("nextBlockIds", nextBlockIds);
 

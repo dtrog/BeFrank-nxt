@@ -8,7 +8,7 @@ fi
 APPLICATION="BeFrank"
 PACKAGE=${APPLICATION}-client-${VERSION}
 echo PACKAGE="${PACKAGE}"
-CHANGELOG=nxt-clone-client-${VERSION}.changelog.txt
+CHANGELOG=bfr-client-${VERSION}.changelog.txt
 OBFUSCATE=$2
 
 FILES="changelogs conf html lib resource contrib logs"

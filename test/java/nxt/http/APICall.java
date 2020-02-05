@@ -20,6 +20,7 @@ import nxt.util.Logger;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 import org.junit.Assert;
+import nxt.Constants;import nxt.Constants;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -59,7 +60,7 @@ public class APICall {
 
         public Builder(String requestType) {
             params.put("requestType", Collections.singletonList(requestType));
-            params.put("deadline", Collections.singletonList("1440"));
+            params.put("deadline", Collections.singletonList("100"));
         }
 
         public Builder param(String key, String value) {
