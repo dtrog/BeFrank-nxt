@@ -16,7 +16,6 @@
 
 package nxt;
 
-import nxt.Constants;
 import nxt.crypto.Crypto;
 import nxt.db.DbIterator;
 import nxt.db.DerivedDbTable;
@@ -346,9 +345,9 @@ final class BlockchainProcessorImpl implements BlockchainProcessor {
 
         private List<Long> getBlockIdsAfterCommon(final Peer peer, final long startBlockId, final boolean countFromStart) {
             long matchId = startBlockId;
-            List<Long> blockList = new ArrayList<>(Constants.PHASING_DELAY / 2);
+            List<Long> blockList = new ArrayList<>(720);
             boolean matched = false;
-            int limit = countFromStart ? Constants.PHASING_DELAY / 2 : Constants.PHASING_DELAY;
+            int limit = countFromStart ? 720 : 1440;
             while (true) {
                 JSONObject request = new JSONObject();
                 request.put("requestType", "getNextBlockIds");

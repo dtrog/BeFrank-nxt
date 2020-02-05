@@ -40,10 +40,10 @@ public class PhasingOnlyTest extends BlockchainTest {
         assertNoPhasingOnlyControl();
         
         setPhasingOnlyControl(VotingModel.ACCOUNT, null, 1L, null, null, new long[] {BOB.getId()},
-                10 * Constants.ONE_NXT, 5, Constants.PHASING_DELAY);
+                10 * Constants.ONE_NXT, 5, 1440);
         
         assertPhasingOnly(new PhasingParams(VotingModel.ACCOUNT.getCode(), 0L, 1L, 0L, (byte)0, new long[] {BOB.getId()}),
-                10 * Constants.ONE_NXT, 5, Constants.PHASING_DELAY);
+                10 * Constants.ONE_NXT, 5, 1440);
     }
     
     @Test

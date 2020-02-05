@@ -166,7 +166,7 @@ public class TestCurrencyExchange extends BlockchainTest {
     private JSONObject publishExchangeOffer(String currencyId) {
         APICall apiCall = new APICall.Builder("publishExchangeOffer").
                 secretPhrase(ALICE.getSecretPhrase()).feeNQT(Constants.ONE_NXT).
-                param("deadline", "100").
+                param("deadline", "1440").
                 param("currency", currencyId).
                 param("buyRateNQT", "" + 95). // buy currency for NXT
                 param("sellRateNQT", "" + 105). // sell currency for NXT

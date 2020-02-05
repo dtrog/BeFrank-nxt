@@ -55,9 +55,8 @@ public final class Constants {
     public static final byte MAX_PHASING_VOTE_TRANSACTIONS = 10;
     public static final byte MAX_PHASING_WHITELIST_SIZE = 10;
     public static final byte MAX_PHASING_LINKED_TRANSACTIONS = 10;
-    public static final int MAX_PHASING_DURATION = 1 * 100;
+    public static final int MAX_PHASING_DURATION = 14 * 100;
     public static final int MAX_PHASING_REVEALED_SECRET_LENGTH = 100;
-    public static final int PHASING_DELAY = 100;
 
     public static final int MAX_ALIAS_URI_LENGTH = 1000;
     public static final int MAX_ALIAS_LENGTH = 100;

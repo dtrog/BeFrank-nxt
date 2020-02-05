@@ -18,7 +18,6 @@ package nxt.http;
 
 import nxt.Account;
 import nxt.Asset;
-import nxt.Constants;
 import nxt.Currency;
 import nxt.FundingMonitor;
 import nxt.HoldingType;

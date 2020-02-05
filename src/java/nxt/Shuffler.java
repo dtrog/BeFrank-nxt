@@ -17,7 +17,6 @@
 package nxt;
 
 import nxt.crypto.Crypto;
-import nxt.Constants;
 import nxt.db.DbIterator;
 import nxt.util.Convert;
 import nxt.util.Logger;
@@ -439,7 +438,7 @@ public final class Shuffler {
         }
         try {
             Transaction.Builder builder = Nxt.newTransactionBuilder(Crypto.getPublicKey(secretPhrase), 0, 0,
-                    (short) Constants.PHASING_DELAY, attachment);
+                    (short) 1440, attachment);
             builder.timestamp(Nxt.getBlockchain().getLastBlockTimestamp());
             Transaction transaction = builder.build(secretPhrase);
             failedTransaction = null;
