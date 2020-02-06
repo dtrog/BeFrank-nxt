@@ -16,7 +16,7 @@
 
 package nxtdesktop;
 
-import com.sun.javafx.scene.web.Debugger;
+import com.sun.javafx.property.PropertyReference;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.concurrent.Worker;
@@ -28,7 +28,7 @@ import javafx.scene.web.WebView;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import netscape.javascript.JSObject;
+import javafx.stage.Window;
 import nxt.Block;
 import nxt.BlockchainProcessor;
 import nxt.Constants;
@@ -39,8 +39,10 @@ import nxt.Transaction;
 import nxt.TransactionProcessor;
 import nxt.http.API;
 import nxt.util.Convert;
+import nxt.util.JSON;
 import nxt.util.Logger;
 import nxt.util.TrustAllSSLProvider;
+import org.json.simple.JSONObject;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.awt.*;
@@ -70,7 +72,7 @@ public class DesktopApplication extends Application {
     private static volatile boolean isLaunched;
     private static volatile Stage stage;
     private static volatile WebEngine webEngine;
-    private JSObject nrs;
+    private Window nrs;
     private volatile long updateTime;
     private nxtdesktop.JavaScriptBridge javaScriptBridge;
 
@@ -140,15 +142,15 @@ public class DesktopApplication extends Application {
                         Logger.logDebugMessage("loadWorker state change ignored");
                         return;
                     }
-                    JSObject window = (JSObject)webEngine.executeScript("window");
+                    Window window = (Window) webEngine.executeScript("window");
                     javaScriptBridge = new JavaScriptBridge(this); // Must be a member variable to prevent gc
-                    window.setMember("java", javaScriptBridge);
+                    window.getProperties().put("java", javaScriptBridge);
                     Locale locale = Locale.getDefault();
                     String language = locale.getLanguage().toLowerCase() + "-" + locale.getCountry().toUpperCase();
-                    window.setMember("javaFxLanguage", language);
+                    window.getProperties().put("javaFxLanguage", language);
                     webEngine.executeScript("console.log = function(msg) { java.log(msg); };");
                     stage.setTitle(Constants.PROJECT_NAME + " Desktop - " + webEngine.getLocation());
-                    nrs = (JSObject) webEngine.executeScript("NRS");
+                    nrs = (Window) webEngine.executeScript("NRS");
                     updateClientState("Desktop Wallet started");
                     BlockchainProcessor blockchainProcessor = Nxt.getBlockchainProcessor();
                     blockchainProcessor.addListener((block) ->
@@ -375,7 +377,7 @@ public class DesktopApplication extends Application {
         } else {
             Logger.logInfoMessage(msg, e);
         }
-        nrs.call("growl", msg);
+        webEngine.getDocument().createProcessingInstruction("growl", msg);
     }
 
 }
