@@ -21,7 +21,7 @@ javac -encoding utf8 -sourcepath "${SP}" -classpath "${CP}" -d classes/ @sources
 if [ $? -eq 0 ]; then
     echo "bfr desktop class files compiled successfully"
 else
-    echo "if javafx is not supported, nxt desktop compile errors are safe to ignore, but desktop wallet will not be available"
+    echo "if javafx is not supported, bfr desktop compile errors are safe to ignore, but desktop wallet will not be available"
 fi
 
 rm -f sources.tmp

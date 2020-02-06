@@ -1,13 +1,13 @@
 <shortcuts>
 	<skipIfNotSupported/>
 	<defaultCurrentUser/>
-	<programGroup defaultName="NXT" location="startMenu"/>
+	<programGroup defaultName="BeFrank" location="startMenu"/>
 	<shortcut
-		name="Nxt Server"
+		name="Bfr Server"
 		target="$INSTALL_PATH\nxt.exe"
 		commandLine=""
 		workingDirectory="$INSTALL_PATH"
-        description="Start NXT server"
+        description="Start BFR server"
 		iconFile="$INSTALL_PATH\html\www\favicon.ico"
         iconIndex="0"
         initialState="normal"

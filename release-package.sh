@@ -106,7 +106,7 @@ sha256sum ${PACKAGE}.zip >> ${CHANGELOG}
 
 echo >> ${CHANGELOG}
 
-#echo "The exe and dmg packages must have a digital signature by \"Jelurida Swiss SA\"." >> ${CHANGELOG}
+#echo "The exe and dmg packages must have a digital signature by \"Damien"." >> ${CHANGELOG}
 
 if [ "${OBFUSCATE}" = "obfuscate" ];
 then
@@ -122,11 +122,9 @@ echo >> ${CHANGELOG}
 cat changelogs/${CHANGELOG} >> ${CHANGELOG}
 echo >> ${CHANGELOG}
 
-#gpg --detach-sign --armour --sign-with 0xC654D7FCFF18FD55 ${PACKAGE}.zip
-#gpg --detach-sign --armour --sign-with 0xC654D7FCFF18FD55 ${PACKAGE}.sh
-#gpg --detach-sign --armour --sign-with 0xC654D7FCFF18FD55 ${PACKAGE}.exe
+gpg --detach-sign --armour --sign-with 0x0B983442323D2FEB {PACKAGE}.exe
 
-#gpg --clearsign --sign-with 0xC654D7FCFF18FD55 ${CHANGELOG}
+gpg --clearsign --sign-with 0x0B983442323D2FEB ${CHANGELOG}
 rm -f ${CHANGELOG}
 gpgv ${PACKAGE}.zip.asc ${PACKAGE}.zip
 #gpgv ${PACKAGE}.sh.asc ${PACKAGE}.sh

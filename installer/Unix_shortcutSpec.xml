@@ -8,7 +8,7 @@
     <programGroup defaultName="NXT" location="applications"/>
 
     <shortcut
-            name="Nxt Start"
+            name="BeFrank Start"
             programGroup="yes"
             desktop="yes"
             target="$INSTALL_PATH/start.sh"
@@ -22,7 +22,7 @@
     </shortcut>
 
     <shortcut
-            name="Nxt Stop"
+            name="BeFraank Stop"
             programGroup="yes"
             desktop="yes"
             target="$INSTALL_PATH/stop.sh"
@@ -36,7 +36,7 @@
     </shortcut>
 
     <shortcut
-            name="Nxt Uninstaller"
+            name="BeFrank Uninstaller"
             programGroup="yes"
             desktop="no"
             target="java"
@@ -47,7 +47,7 @@
             encoding="UTF-8"
             categories="Application;Network;"
             createForAll="true"
-            description="Uninstall Nxt">
+            description="Uninstall Bfr">
     </shortcut>
 
 

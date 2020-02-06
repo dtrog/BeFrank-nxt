@@ -1,4 +1,4 @@
-Running the Nxt software:
+Running the Bfr software:
 
 Dependencies: Java 8 or later needs to be installed first. Oracle JVM gives
 better performance and has been more tested, but OpenJDK is also supported.
@@ -7,7 +7,7 @@ better performance and has been more tested, but OpenJDK is also supported.
 Using the installer:
 
 An IzPack based installation package is provided. Click on the corresponding
-jar/exe/dmg package, or run "java -jar nxt-client.jar" to start the
+jar/exe/dmg package, or run "java -jar bfr-client.jar" to start the
 installer. See https://bitbucket.org/JeanLucPicard/nxt/issues/283 for more
 details about the IzPack installer. After installation, use the shortcuts or
 desktop icons to start the Nxt server.

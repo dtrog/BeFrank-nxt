@@ -71,7 +71,7 @@ rm -rf ${APPLICATION}
 
 echo creating change log ${CHANGELOG}
 echo -e "Release $1\n" > ${CHANGELOG}
-echo -e "https://www.jelurida.com/\n" >> ${CHANGELOG}
+echo -e "https://www.getfrank.be/\n" >> ${CHANGELOG}
 echo -e "sha256 checksums:\n" >> ${CHANGELOG}
 sha256sum ${PACKAGE}.exe >> ${CHANGELOG}
 

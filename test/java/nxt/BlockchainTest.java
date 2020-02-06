@@ -35,7 +35,7 @@ public abstract class BlockchainTest extends AbstractBlockchainTest {
     protected static int baseHeight;
 
     protected static String forgerSecretPhrase = "aSykrgKGZNlSVOMDxkZZgbTvQqJPGtsBggb";
-    protected static final String forgerAccountId = "NXT-9KZM-KNYY-QBXZ-5TD8V";
+    protected static final String forgerAccountId = "BFR-9KZM-KNYY-QBXZ-5TD8V";
 
     public static final String aliceSecretPhrase = "hope peace happen touch easy pretend worthless talk them indeed wheel state";
     private static final String bobSecretPhrase2 = "rshw9abtpsa2";

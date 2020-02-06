@@ -32,8 +32,8 @@ import java.util.List;
 
 public class BlockchainProcessorTest extends AbstractBlockchainTest {
 
-    private static final String defaultTraceFile = "nxt-trace-default.csv";
-    private static final String testTraceFile = "nxt-trace.csv";
+    private static final String defaultTraceFile = "bfr-trace-default.csv";
+    private static final String testTraceFile = "bfr-trace.csv";
     private static final int maxHeight = Constants.LAST_KNOWN_BLOCK;
     private static final int startHeight = 0;
 

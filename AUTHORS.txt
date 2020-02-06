@@ -1,3 +1,15 @@
+This is the list of current authors on the BeFrank nxt generation project developers.
+
+Damien Trog
+damien@getfrank.be
+GPG key fingerprint: 7FA5 2B0D EE79 1C6A B098  624E 0B98 3442 323D 2FEB
+BFR account: BFR-LMYX-3PAG-8NP2-FT2T5
+
+
+
+
+#### Nxt Developers ####
+
 This is a list of current and past developers working on the Nxt core software,
 in order approximately corresponding to the time they joined the team.
 

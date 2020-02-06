@@ -2,10 +2,9 @@
 # USERS GUIDE #
 
 ----
-## What is in for me with Nxt? ##
+## What is in for me with BeFrank? ##
 
   - a **decentralized** platform for my assets like money, company shares etc.
-  - almost all trusted third parties **removed**
   - many useful financial, economical and social features
 
 ----
@@ -25,8 +24,9 @@
   - accounts are accessible from everywhere in the world
   - very strong and long passphrases required
 
-### Nxt ###
+### BFR ###
 
+  - Based on nxt
   - peer-to-peer protocol
   - efficient blockchain technology (can run on low-power devices)
   - allows payment *transactions*, *exchange trading*, *name registrations*, *voting* and much more
