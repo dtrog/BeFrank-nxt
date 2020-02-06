@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="GEN_FOLDER_RELATIVE_PATH_APT" value="/../../../../BeFrank-nxt/gen" />
+        <option name="GEN_FOLDER_RELATIVE_PATH_AIDL" value="/../../../../BeFrank-nxt/gen" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/../../../../BeFrank-nxt/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/../../../../BeFrank-nxt/res" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/../../../../BeFrank-nxt/assets" />
+        <option name="LIBS_FOLDER_RELATIVE_PATH" value="/../../../../BeFrank-nxt/libs" />
+        <option name="PROGUARD_LOGS_FOLDER_RELATIVE_PATH" value="/../../../../BeFrank-nxt/proguard_logs" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../../lasses" />
+    <output-test url="file://$MODULE_DIR$/../../../test/classes" />
+    <exclude-output />
+    <javadoc-paths>
+      <root url="file://$MODULE_DIR$/../../../html/doc" />
+    </javadoc-paths>
+    <content url="file://$MODULE_DIR$/../../..">
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/plugins/cordova-plugin-file/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/plugins/ionic-plugin-keyboard/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/app/wallet/plugins/cordova-plugin-android-permissions/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/app/wallet/plugins/cordova-plugin-inappbrowser/src/amazon" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/plugins/cordova-plugin-inappbrowser/src/amazon" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/app/wallet/plugins/phonegap-plugin-barcodescanner/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/platforms/android/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/app/wallet/plugins/cordova.plugins.diagnostic/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../html/platforms/android/app/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/plugins/cordova-plugin-statusbar/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/app/wallet/plugins/cordova-plugin-compat/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/plugins/cordova-plugin-splashscreen/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/plugins/phonegap-plugin-barcodescanner/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/app/wallet/plugins/cordova-plugin-file/tests/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/plugins/cordova-plugin-inappbrowser/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../html/platforms/android/CordovaLib/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/app/wallet/plugins/ionic-plugin-keyboard/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/app/wallet/platforms/android/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/plugins/cordova-plugin-file/tests/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/plugins/cordova-plugin-whitelist/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/plugins/cordova.plugins.diagnostic/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../installer/panels/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/plugins/cordova-plugin-device/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/app/wallet/plugins/cordova-plugin-device/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../src/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/plugins/cordova-plugin-compat/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/app/wallet/plugins/cordova-plugin-whitelist/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/app/wallet/plugins/cordova-plugin-statusbar/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/app/wallet/plugins/cordova-plugin-splashscreen/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/app/wallet/plugins/cordova-plugin-file/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/app/wallet/plugins/cordova-plugin-inappbrowser/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../mobile/plugins/cordova-plugin-android-permissions/src/android" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../conf" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../contrib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../html" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../resource" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../test/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../gen" isTestSource="false" generated="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../addons/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../bfr_db" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../changelogs" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../.." />
+      <excludeFolder url="file://$MODULE_DIR$/../../../installer" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../jre" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../logs" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../mobile" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../nxt_db" />
+    </content>
+    <content url="file://$MODULE_DIR$/src/java">
+      <sourceFolder url="file://$MODULE_DIR$/src/java" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/test/java">
+      <sourceFolder url="file://$MODULE_DIR$/test/java" isTestSource="true" />
+    </content>
+    <orderEntry type="jdk" jdkName="13.0.2" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/conf" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="lib" level="project" />
+    <orderEntry type="library" exported="" name="testlib" level="project" />
+  </component>
+</module>
